@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile</title>
+    <link rel="stylesheet" href="/site/css/reset.css">
+    <link rel="stylesheet" href="/site/css/profile.css">
+</head>
+<body style="background-color: black;">
+    <main id="profileContent">
+        <div>
+            <div id="arrow">
+                <img src="/" alt="/"> <!-- pageBackImage -->
+            </div>
+        </div>
+        <div>
+            <div id="header">  <!-- header -->
+                <div id="hleft"> <!-- left -->
+                    <div>
+                        <img src="/" alt="/"> <!-- UserIconImage -->
+                        <div>
+                            <img src="/" alt="/"> <!-- UserBadgeImage -->
+                        </div>
+                    </div>
+                </div>
+                <div id="hright"> <!-- right -->
+                    <div>
+                        <p>プロフィール変更</p>
+                    </div>
+                </div>
+            </div>
+            <div id="name">   <!-- ID&name -->
+                <div>
+                    <p>ログインID</p>
+                </div>
+                <div>
+                    <h3>ニックネーム</h3> <!-- 名前振り分け user.nickname -->
+                </div> 
+            </div>
+            <div id="badge"> <!-- Badge -->
+                <div>
+                    <h4>バッジ</h4>
+                </div>
+                <!-- forで繰り返す -->
+                <div>
+                    <img src="/" alt="/">  <!-- BadgeImg*10 -->
+                </div>
+                <!-- /for -->
+            </div>
+            <div id="text"> <!-- text -->
+                <div>
+                    <h4>プロフィールテキスト</h4>
+                </div>
+                <div>
+                    <p>テキスト</p> <!-- 自己紹介文 user.description -->
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
