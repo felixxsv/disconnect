@@ -1,12 +1,13 @@
 main{
     max-width: 800px;
     margin: 0 auto;
-    height: 100px;
+    height: 150px;
     background-color: #aaa;
     text-align: center;
 }
-.inputTextArea{
-    legend{
-        
-    }
+#textTitle{
+    font-size: large;
+}
+#inputTextArea{
+    
 }
