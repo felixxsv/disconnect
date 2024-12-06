@@ -1,0 +1,80 @@
+@charset "UTF-8";
+main{/*全体の設定*/
+    /*text-align: center;*/
+    width: 1041px;
+    height: 626px;
+    /*後で消す背景の色*/
+    background-color: rgb(125, 123, 123);
+    
+    color: #f0f0f0;
+}
+/*スレの内部の真ん中のエリアで色々含んでるdiv*/
+#commentArea{
+    background-color: #2F2C37;
+    width: 973px;
+    height: 438px;
+    margin: 0 auto;
+}
+
+/*h2のタイトルの文字*/
+#textTitle{
+    /*入れるGoogleFont*/
+text-align: left;
+font-size: 40px;
+
+}
+/*　上にあるコメントの情報(ユーザー名、投稿時間、コメント番号)を三つまとめたdiv　*/
+#commentInformation{
+    display: flex;
+    font-size: 15px;
+  }
+/*　ユーザー名　*/
+#textNickName{
+    position: relative;
+    display: flex;
+    
+}
+/*投稿時間*/
+#textPostTime{
+    position: absolute; 
+    left: 200px; /* あとで調節 */
+    display: flex;
+}
+/*コメント番号*/
+#textCommentNum{
+    position: absolute; 
+    left: 400px; /* あとで調節 */
+    display: flex;
+}
+
+/*コメントの内容
+.textComment{
+
+}*/
+/*いいねの数
+.textLikeCount{
+
+}*/
+/*-------------------------下の送信のエリア-----------------------*/
+#transmission{
+    background-color: #2F2C37;
+    display: flex;
+    
+
+}
+
+
+/*送信のテキストエリアのdiv*/
+#inputTextComment input[type="text"]{
+    width: 872px;
+    height: 55px;
+}
+
+/*送信のボタンのdiv*/
+#buttonSend input[type="submit"]{
+    background-color: #200D4D;/**/
+    font-size: 20px;
+    color: #f0f0f0;
+    width: 100px;
+    height: 55px;
+}
