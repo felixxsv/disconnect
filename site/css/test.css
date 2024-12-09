@@ -1,13 +1,26 @@
 main{
     max-width: 800px;
     margin: 0 auto;
-    height: 150px;
+    height: 190px;
     background-color: #aaa;
     text-align: center;
 }
-#textTitle{
-    font-size: large;
+p{
+    text-align: left;
+    font-size: 20px;
 }
-#inputTextArea{
+input.form {
+    width: 96%;
+    margin: 0 auto;
+    border-radius: 7px;
+    padding: 10px;
+ }
+ div.inputTextArea{
+    vertical-align: top;
+ }
+ div.inputSubmitArea{
     
+ }
+#textTitle{
+    font-size: 30px;
 }
