@@ -1,28 +1,76 @@
 @charset "UTF-8";
+/*Google Font Download*/
+.kosugi-maru-regular {
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.stick-regular {
+    font-family: "Stick", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+
 main{/*全体の設定*/
     /*text-align: center;*/
     width: 1041px;
     height: 626px;
-    /*後で消す背景の色*/
+    /*後で消す背景の色、グラデ画像*/
     background-color: rgb(125, 123, 123);
     
     color: #f0f0f0;
+    
 }
+
+  
 /*スレの内部の真ん中のエリアで色々含んでるdiv*/
 #commentArea{
     background-color: #2F2C37;
     width: 973px;
     height: 438px;
     margin: 0 auto;
+    margin-top: 15px;
+    font-family: 'Kosugi Maru', sans-serif;
 }
 
-/*h2のタイトルの文字*/
+/*h2の「タイトル」の文字*/
 #textTitle{
-    /*入れるGoogleFont*/
-text-align: left;
-font-size: 40px;
+    font-family: 'Stick', sans-serif;
+    text-align: left;
+    font-size: 40px;
+    padding: 15px 0 0 40px;
+}
+#imageIcon, #imageBadge{
+    position: absolute; /* 画像の位置指定 */
+  top: 0;
+  left: 0;
+}
+/*アイコンの画像*/
+#imageIcon{
+    z-index: 1;
+    top: 100px;
+    left: 90px;
+
+    width: 60px; /* 画像の幅 */
+    height: 60px; /* 画像の高さ（円形にするために幅と高さは同じにする） */
+    border-radius: 50%; /* 丸く切り取る */
+    object-fit: cover; /* 画像が切り取られるときに中心を保つ */
+}
+/*バッジの画像*/
+#imageBadge{
+    z-index: 2;
+    top: 130px;
+    left: 130px;
+
+    width: 34px; /* 画像の幅 */
+    height: 34px; /* 画像の高さ（円形にするために幅と高さは同じにする） */
+    border-radius: 50%; /* 丸く切り取る */
+    object-fit: cover; /* 画像が切り取られるときに中心を保つ */
 
 }
+
 /*　上にあるコメントの情報(ユーザー名、投稿時間、コメント番号)を三つまとめたdiv　*/
 #commentInformation{
     display: flex;
@@ -33,32 +81,50 @@ font-size: 40px;
     position: relative;
     display: flex;
     
+    margin-left: 180px;
+    margin-top: 20px;
 }
 /*投稿時間*/
 #textPostTime{
     position: absolute; 
-    left: 200px; /* あとで調節 */
+    left: 500px;/* あとで調節 */
     display: flex;
+    /*margin-left: 80px;*/
+    margin-top: 20px;
 }
 /*コメント番号*/
 #textCommentNum{
     position: absolute; 
-    left: 400px; /* あとで調節 */
+    left: 700px; /* あとで調節 */
     display: flex;
+    /*margin-left: 80px;*/
+    margin-top: 20px;
 }
 
-/*コメントの内容
+/*コメントの内容*/
 .textComment{
+margin-top: 0.8%;
+width: 681px;
+margin-left: 15%;
+}
+/*いいねのハートの画像*/
+.buttonLike{
+ 
+    margin-left: 86%;
+    margin-top: -5%;
+}
 
-}*/
-/*いいねの数
+/*いいねの数*/
 .textLikeCount{
-
-}*/
+ 
+    margin-left: 91.5%;
+    margin-top: -3%;
+    font-family: 'Kosugi Maru', sans-serif;
+}
 /*-------------------------下の送信のエリア-----------------------*/
 #transmission{
-    background-color: #2F2C37;
     display: flex;
+    margin-top: 25px;
     
 
 }
@@ -68,6 +134,8 @@ font-size: 40px;
 #inputTextComment input[type="text"]{
     width: 872px;
     height: 55px;
+    background-color: #c5b0ff;
+    
 }
 
 /*送信のボタンのdiv*/
@@ -77,4 +145,5 @@ font-size: 40px;
     color: #f0f0f0;
     width: 100px;
     height: 55px;
+    font-family: 'Kosugi Maru', sans-serif;
 }
