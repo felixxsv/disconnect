@@ -1,9 +1,16 @@
+main{
+    width: 100%;
+    max-width: 1041px;
+    margin: auto;
+}
 #profileContent{
     display: flex;
 }
 #arrow {
     width: 158px;
     box-sizing: border-box;
+    margin-top: 60px;
+    margin-left: 40px;
     img{
         width: 60px;
         height: 60px;
@@ -14,8 +21,30 @@
     display: flex;
 
 }
+#hleft{
+    margin-top: 27px;
+    #iconBadge{
+    position: relative;
+    display: inline-block;
+        #icon{
+        width: 120px;
+        height: 120px;
+        border-radius: 60px ;
+        }
+        #icon-Badge{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px ;
+        position: absolute;
+        top: 80%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        }
+    }
+}
 #hright{
-margin-left: 700px;
+margin-left: 372px;
+margin-top: 106px;
 div{
     width: 237px;
     height: 31px;
@@ -26,37 +55,49 @@ div{
     border-radius: 20px ;
     border-color: white;
     border-width: 3px;
+    border-style: solid;
     color: white;
 }
 }
 #name{
+    margin-top: 60px;
     height: 124px;
     p{
         font-size: 20px;
         color: white;
     }
     h3{
+        width: 620px;
+        height: 100px;
         font-size: 50px;
         color: white;
+        margin-bottom: 45px;
     }
 }
 #badge{
     height: 119px;
+    margin-top: 45px;
     h4{
         font-size: 30px;
         color: white;
     }
     img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px ;
         /*for繰り返し部分*/
     }
 }
 #text{
     height: 75px;
+    width: 798px;
     color: white;
     h4{
         font-size: 30px;
     }
-    p{
+    #textProfile{
+        height: 32px;
+        width: 711px;
         font-size: 16px;
     }
 }
