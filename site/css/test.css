@@ -1,19 +1,25 @@
 main{
     max-width: 800px;
     margin: 0 auto;
-    height: 250px;
+    height: 280px;
     background-color: #aaa;
     background-size: auto;
     text-align: center;
 }
-p{
+.forGet{
+
+}
+.textLeft{
     text-align: left;
-    font-size: 20px;
+    font-size: 25px;
+}
+.textRight{
+    text-align: right; 
 }
 input.form {
     width: 96%;
     margin: 0 auto;
-    border-radius: 7px;
+    border-radius: 15px;
     padding: 10px;
  }
  div.inputTextArea{
@@ -21,8 +27,13 @@ input.form {
  }
  div.inputSubmitArea{
     text-align: left;
-    
  }
+ .submit{
+    border-radius: 7px;
+    margin: 0 auto;
+    height:48px;
+    width:120px;
+    }
 #textTitle{
     font-size: 30px;
 }
