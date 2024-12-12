@@ -1,0 +1,28 @@
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    height: 250px;
+    background-color: #aaa;
+    background-size: auto;
+    text-align: center;
+}
+p{
+    text-align: left;
+    font-size: 20px;
+}
+input.form {
+    width: 96%;
+    margin: 0 auto;
+    border-radius: 7px;
+    padding: 10px;
+ }
+ div.inputTextArea{
+    vertical-align: top;
+ }
+ div.inputSubmitArea{
+    text-align: left;
+    
+ }
+#textTitle{
+    font-size: 30px;
+}

@@ -1,0 +1,12 @@
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100px;
+    background-color: #aaa;
+    text-align: center;
+}
+.inputTextArea{
+    legend{
+        
+    }
+}
