@@ -1,7 +1,13 @@
+body{
+    height: 100vh;
+    overflow: none;
+}
 main{
     width: 100%;
     max-width: 1041px;
     margin: auto;
+    height: 100%;
+    overflow-y: scroll;
 }
 #profileContent{
     display: flex;
@@ -49,7 +55,10 @@ div{
     width: 237px;
     height: 31px;
     font-size: 20px;
-    padding-top: 10px;
+    display: inline-block;
+    line-height: 33px;
+    text-align: center;
+    text-decoration: none;
     background-color: #363636;
     text-align: center;
     border-radius: 20px ;
@@ -100,4 +109,62 @@ div{
         width: 711px;
         font-size: 16px;
     }
+}
+
+/*プロフィール変更専用↓*/
+#mainChange{
+    margin-top: 40px;
+    h4{
+        color: white;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    textarea{
+        height: 42px;
+        width: 798px;
+        min-height: 42px;
+        min-width: 798px;
+        max-height: 42px;
+        max-width: 798px;
+        background-color: #363636;
+        border-color: white;
+        border-width: 4px;
+        border-style: solid;
+        color: white;
+        font-size: 16px;
+        display: inline-block;
+        line-height: 45px;
+        text-decoration: none;
+        
+        margin-bottom: 25px;
+        #nickName{
+            margin-bottom: 0%;
+        }
+    }
+}
+#pw{
+    margin-top: 50px;
+}
+#changeBtn{
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+
+    width: 107px;
+    height: 47px;
+    max-width: 107px;
+    max-height: 50px;
+    background-color: #363636;
+    text-align: center;
+    border-radius: 20px ;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+    font-size: 30px;
+    margin-top: 146px;
+    margin-left: 632px;
+    margin-bottom: 50px;
 }

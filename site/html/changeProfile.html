@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile</title>
+    <link rel="stylesheet" href="/site/css/reset.css">
+    <link rel="stylesheet" href="/site/css/profile.css">
+</head>
+<body style="background-color: rgb(90, 90, 90);">
+    <main id="profileContent">
+            <div>
+                <div id="arrow">
+                    <img src="/site/image/戻りボタン.png" alt="矢印"> <!-- pageBackImage -->
+                </div>
+            </div>
+            <div>
+                <div id="header">  <!-- header -->
+                    <div id="hleft"> <!-- left -->
+                        <div id="iconBadge">
+                            <img src="/site/image/sample_Icon.png" alt="アイコン" id="icon"> <!-- UserIconImage -->
+                        </div>
+                    </div>
+                    <div id="hright"> <!-- right -->
+                        <div>
+                            <p>アイコン変更</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="mainChange">
+                    <div>
+                        <h4>プロフィールテキスト</h4>
+                    </div>
+                    <div>
+                        <textarea name="" id="">
+                        </textarea>
+                    </div>
+                    <div>
+                        <h4>ニックネーム変更</h4>
+                    </div>
+                    <div>
+                        <textarea name="" id="nickName">
+                        </textarea>
+                    </div>
+                </div>
+                <div id="badge"> <!-- Badge -->
+                    <div>
+                        <h4>バッジ変更</h4>
+                    </div>
+                    <!-- forで繰り返す -->
+                    <div>
+                        <img src="/site/image/test.jpg" alt="バッジ">  <!-- BadgeImg*10 -->
+                        <img src="/site/image/test.jpg" alt="バッジ">
+                        <img src="/site/image/test.jpg" alt="バッジ">
+                        <img src="/site/image/test.jpg" alt="バッジ">
+                        <img src="/site/image/test.jpg" alt="バッジ">
+                        <img src="/site/image/test.jpg" alt="バッジ">
+                        <img src="/site/image/test.jpg" alt="バッジ">
+                        <img src="/site/image/test.jpg" alt="バッジ">
+                        <img src="/site/image/test.jpg" alt="バッジ">
+                        <img src="/site/image/test.jpg" alt="バッジ">
+                        <img src="/site/image/test.jpg" alt="バッジ">
+                    </div>
+                    <!-- /for -->
+                </div>
+                <div id="pw">
+                    <div id="mainChange"> <!-- text -->
+                        <div>
+                            <h4>現在のパスワード</h4>
+                        </div>
+                        <div>
+                            <textarea name="" id="nowPW">
+                            </textarea>
+                        </div>
+                        <div>
+                            <h4>新しいパスワード</h4>
+                        </div>
+                        <div>
+                            <textarea name="" id="newPW">
+                            </textarea>
+                        </div>
+                        <div>
+                            <h4>新しいパスワード（確認）</h4>
+                        </div>
+                        <div>
+                            <textarea name="" id="newPW2">
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div id="changeBtn">
+                    <div>
+                        <p>変更</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+</html>
