@@ -36,6 +36,16 @@ header {
     max-height: 60px;
 }
 
+#admin {}
+
+#boxSidebar>.enabled {
+    display: block;
+}
+
+#boxSidebar>.disabled {
+    display: none;
+}
+
 
 /* --common header settings-- */
 
@@ -66,13 +76,34 @@ section {
     background-color: #363636;
 }
 
+.sidebar>div {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxSidebar>.sidebar:nth-of-type(2)>div {
+    padding-bottom: 5px;
+    &>img {
+        width: 60%;
+    }
+}
+
+.sidebar>div>img {
+    width: 70%;
+    height: 100%;
+}
+
 #boxSideList {
     flex: auto;
     text-align: center;
-    background-image: url("/site/img/common/backGroundImageSideList.svg");
+    background-image: url("/site/img/common/backGroundImageSideListBlack.svg");
     background-color: rgba(0, 0, 0, 0.15);
     background-blend-mode: darken;
 }
+
+#boxSideList>.empty {}
 
 .sideList:not(.empty) {
     height: 45px;
