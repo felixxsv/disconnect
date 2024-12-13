@@ -1,3 +1,6 @@
+body{
+    width: 1040px;
+}
 .tabs {
     max-width: 100%;
     margin: 10% auto;
@@ -12,10 +15,11 @@
   .tab-item {
     border-radius: 10px 10px 0 0;
     background-color: #A5A3A0;
-    padding: 5px ;
+    padding: 10px 30px;
     margin: 40px 0 0 0;
     cursor: pointer;
     color: #fff;
+    font-size: 16px;
   }
   .tab-item:first-child{
     margin-left: 50px;
@@ -23,11 +27,13 @@
   
   .tab-content {
     background-color: #72696A;
-    margin: 0 auto;
+    
   }
-  
+  /*  */
   .tab-panel {
-    margin-left: 40px;
+    height: 550px;/* contentの高さ　テスト用   */
+    width: 900px;
+    margin-left: 20px;
     display: none;
     color: #fff;
   }
@@ -42,6 +48,23 @@
     padding: 3%;
   }
   .tab-panel.active h2 {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
   }
+  .createText{
+    width: 100%;
+    padding: 15px 0;
+    background-color: #363636;
+    border: solid 3px #fff;
+    margin: 5px 0 20px 0;
+    color: #fff;
+  }
+  #createFistCom{
+    width: 100%;
+    height: 50px;
+    padding-bottom: 25px;
+    background-color: #363636;
+    border: solid 3px #fff;
+    margin: 5px 0 20px 0;
+    color: #fff;
+  }
+
