@@ -14,11 +14,24 @@ main{
     padding-right: 100;
 }
 
+main::-webkit-scrollbar {
+    width: 14px;
+  }
+  
+  main::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+  
+  main::-webkit-scrollbar-thumb {
+    background-color: #d9d9d9;
+  }
 .notifiCmp {
     max-width: 90%;
     height: auto;
     margin: 10px auto;
+    padding-top: 15px;
     border-radius: 18px;
+    text-align: right;
     background-color: #363636;
     border: 3px solid #ffffff;
 }
@@ -42,4 +55,9 @@ main{
    display: flex;
    justify-content: flex-end;
    align-items: flex-end;
+}
+#date-time{
+    color: #F0F0F0;
+    margin: 25px;
+    
 }
