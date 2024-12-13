@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Google Font Download*/
+/*Google Font Download　消す　*/
 .kosugi-maru-regular {
     font-family: "Kosugi Maru", sans-serif;
     font-weight: 400;
@@ -54,8 +54,8 @@ display: flex;
 /*スレの内部の真ん中のエリアで色々含んでるdiv*/
 #commentArea{
     background-color: #2F2C37;
-    width: 973px;
-    height: 438px;
+    width: 93.46%;
+    height: 69.98%;
     margin-top: 15px;
     font-family: 'Kosugi Maru', sans-serif;
     overflow: auto;/*スクロールバー*/
