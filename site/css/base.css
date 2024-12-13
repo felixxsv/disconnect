@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
 html,
 body {
     min-width: 720px;
@@ -9,6 +10,9 @@ body {
     height: 100vh;
     flex-direction: column;
 }
+
+
+/*Google Font Download*/
 
 
 /* ++common header settings++ */
@@ -103,7 +107,15 @@ section {
     background-blend-mode: darken;
 }
 
-#boxSideList>.empty {}
+#boxSideList h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 40px;
+    font-family: "Stick", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align-last: left;
+}
 
 .sideList:not(.empty) {
     height: 45px;
