@@ -32,27 +32,16 @@ margin-left: 33px;
   }
 
   /*　一つの投稿のまとめdiv　*/
-  .commentOne{
+  .commentMain{
 margin-bottom: 13px;
 padding-bottom: 25px;
 display: flex;
-position: relative;
 
-  }
-  /*　「#commentOne」に　*/
-.commentOne::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 20px; /* 左端から20px */
-    right: 20px; /* 右端から20px */
-    height: 3px;
-    background-color: #d9d9d9;
   }
 
 /*「#commentArea」にあるスクロールバーの設定三つ*/
 #commentArea::-webkit-scrollbar {
-    width: 25px;
+    width: 14px;
   }
   
   #commentArea::-webkit-scrollbar-track {
@@ -71,7 +60,6 @@ position: relative;
     font-family: 'Kosugi Maru', sans-serif;
     overflow: auto;/*スクロールバー*/
 
-    /*------------------------------------------------------------------動かん*/
 
     #imageIcon, #imageBadge{
         position: absolute; /* 画像の位置指定 */
@@ -130,7 +118,7 @@ position: relative;
 /*投稿時間*/
 #textPostTime{
     position: absolute; 
-    left: 500px;/* あとで調節 */
+    left: 450px;/* あとで調節 */
     display: flex;
     margin-top: 20px;
 }
@@ -147,6 +135,10 @@ position: relative;
 margin-top: 5px;
 width: 681px;
 margin-left: 150px;
+p{/*コメントの文字*/
+    line-height: 1.4;/*あとで調節*/
+    font-size: 16px;
+}
 }
 /*いいねのハートの画像*/
 .buttonLike{
@@ -173,6 +165,7 @@ margin-left: 150px;
 .textareaComment {
     width: 872px;
     height: 55px;
+
     min-height: min-content;
     background-color: #2F2C37;
     color: #f0f0f0;
@@ -180,6 +173,10 @@ margin-left: 150px;
     font-size: 16px;
     resize: none;
     field-sizing: content;
+    p{
+        line-height: 1.4;/*あとで調節*/
+        font-size: 16px;
+    }
 
 }
 
@@ -189,6 +186,17 @@ margin-left: 150px;
     font-size: 20px;
     color: #f0f0f0;
     width: 100px;
-    height: 55px;
+    height: 55px;/*あとで*/
     font-family: 'Kosugi Maru', sans-serif;
 }
+/*　したの線のdiv border-bottom　*/
+.lineborder{
+    border-bottom:3px solid #d9d9d9;
+    width: 874px;
+  margin: 0 auto;
+
+}
+  .commentComponent:last-child > .lineborder {
+    border-bottom: none;
+
+  }
