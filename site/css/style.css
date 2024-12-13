@@ -5,7 +5,7 @@ body{
 }
 main{
     width: 100%;
-    max-width: 100%;
+    max-width: 1440px;
     margin: auto;
     height: 100%;
 }
@@ -13,8 +13,8 @@ main{
         font-size: 64px;
         color: rgb(255, 255, 255);
         text-align: center;
-        margin-top: 30px;
         margin-bottom: 15px;
+        padding-top: 15px;
 }
 #list{
     width: 80%;
@@ -26,7 +26,7 @@ main{
 #content{
     display: flex;
     background-color: rgb(185, 185, 185);
-    font-size: 15px;
+    font-size: 16px;
     color: black;
     width: 86.9%;
     height: 50px;
@@ -39,10 +39,7 @@ main{
     border-style: solid;
     margin-bottom: 2px;
     div{
-        display: inline-block;
-    line-height: 30px;
-    text-align: center;
-    text-decoration: none;
+        margin: 0 auto;
     }
     #icon{
         img{
@@ -84,7 +81,7 @@ main{
 }
 #prevBtn{
     display: inline-block;
-    line-height: 30px;
+    line-height: 25px;
     text-align: center;
     text-decoration: none;
     width: 76px;
@@ -96,13 +93,17 @@ main{
     border-width: 3px;
     border-style: solid;
     color: white;
-    font-size: 15px;
-    margin-top: 60px;
-    margin-right: 600px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-right: 80%;
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 #nextBtn{
     display: inline-block;
-    line-height: 30px;
+    line-height: 25px;
     text-align: center;
     text-decoration: none;
     width: 76px;
@@ -113,13 +114,16 @@ main{
     border-color: white;
     border-width: 3px;
     border-style: solid;
-    color: white;
-    font-size: 15px;
-    margin-top: 60px;
+    font-size: 20px;
+    margin-top: 50px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 #pageCnt{
     color: white;
     font-size: 32px;
-    margin-top: 60px;
+    margin-top: 50px;
     padding-right: 30px;
 }
