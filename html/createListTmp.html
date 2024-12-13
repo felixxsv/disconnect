@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body bgcolor="#696969">
+<body bgcolor="">
     <main>
-        <h4>ユーザー一覧</h4>
+        <div id="subtitle">
+            <h4>ユーザー一覧</h4>
+        </div>
         <div id="list">
             <div id="content">
                 <div id="icon"><p>アイコン</p></div>
@@ -24,22 +26,31 @@
                     <!-- アイコン画像 -->
                 </div>
                 <div id="nickName">
-                    <p>Yangu</p><!-- 氏名 -->
+                    <p>YanguYangu</p><!-- 氏名 -->
                 </div>
                 <div id="roll">
                     <p>学生</p><!-- 役職 -->
                 </div>
                 <div id="email">
-                    <p>||||||@sapporo-mirai.ac.jp</p><!-- Email -->
+                    <p>000000@sapporo-mirai.ac.jp</p><!-- Email -->
                 </div>
-                <div>
-                    <div id="sure">
-                        <a href="test.html">
-                            <p>テスト</p><!-- 作成スレ画面 -->
-                        </a>
-                    </div>
-                    <!-- 作成したスレ数 for文 -->
+                <div id="sure">
+                    <a href="test.html">
+                        テスト<!-- 作成スレ画面  ユーザーのSQLを入れる-->
+                    </a>
                 </div>
+            </div>
+            <!-- for文で50件まで繰り返す　残りは別ページ -->  
+        </div>         
+        <div id="Btn">
+            <div id="prevBtn">
+                <a href="">Prev</a>
+            </div>
+            <div id="pageCnt">
+                <p>1/1</p><!-- ページ数 -->
+            </div>
+            <div id="nextBtn">
+                <a href="">Next</a>
             </div>
         </div>
     </main>

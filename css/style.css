@@ -1,35 +1,52 @@
 body{
     height: 100vh;
     overflow: none;
+    background-color: #696969;
 }
 main{
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
     height: 100%;
-    h4{
-        width: 500px;
-        height: 76px;
+}
+#subtitle{
         font-size: 64px;
         color: rgb(255, 255, 255);
         text-align: center;
-    }
+        margin-top: 30px;
+        margin-bottom: 15px;
 }
 #list{
-    width: 750px;
-    height: 449px;
+    width: 80%;
+    height: 70%;
     overflow-y: scroll;
+    margin: auto;
+    max-width: 100%;
 }
 #content{
     display: flex;
     background-color: rgb(185, 185, 185);
     font-size: 15px;
     color: black;
-    width: 715px;
+    width: 86.9%;
     height: 50px;
     border-radius: 20px;
-    border-width: 2px;
+    border-width: 1px;
     border-color: black;
-
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    border-style: solid;
+    margin-bottom: 2px;
+    div{
+        display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    }
     #icon{
         img{
+            margin: 5px;
             width: 40px;
             height: 40px;
             border-radius: 40px;
@@ -37,15 +54,72 @@ main{
         }
     }
     #nickName{
-
+        width: 123px;
+        height: 28px;
+        text-align: center;
     }
     #roll{
+        width: 68px;
+        height: 28px;
+        text-align: center;
 
     }
     #email{
+        width: 240px;
+        height: 28px;
+        text-align: center;
 
     }
     #sure{
-
+        width: 140px;
+        height: 28px;
+        text-align: center;
     }
+}
+#Btn{
+    display: flex;
+    width: 88.4%;
+    max-width: 100%;
+    margin: auto;
+}
+#prevBtn{
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 76px;
+    height: 27px;
+    background-color: #363636;
+    text-align: center;
+    border-radius: 20px ;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+    font-size: 15px;
+    margin-top: 60px;
+    margin-right: 600px;
+}
+#nextBtn{
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 76px;
+    height: 27px;
+    background-color: #363636;
+    text-align: center;
+    border-radius: 20px ;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+    font-size: 15px;
+    margin-top: 60px;
+}
+#pageCnt{
+    color: white;
+    font-size: 32px;
+    margin-top: 60px;
+    padding-right: 30px;
 }
