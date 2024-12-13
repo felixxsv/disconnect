@@ -14,7 +14,6 @@
 
 
 main{/*全体の設定*/
-    /*text-align: center;*/
     width: 1041px;
     height: 626px;
     /*後で消す背景の色、グラデ画像*/
@@ -27,8 +26,42 @@ main{/*全体の設定*/
 margin-left: 33px;
 }
 
+/*　アイコンとバッジをまとめたdiv　*/
+  .iconUnify{
+    position: relative;
+  }
 
+  /*　一つの投稿のまとめdiv　*/
+  .commentOne{
+margin-bottom: 13px;
+padding-bottom: 25px;
+display: flex;
+position: relative;
+
+  }
+  /*　「#commentOne」に　*/
+.commentOne::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px; /* 左端から20px */
+    right: 20px; /* 右端から20px */
+    height: 3px;
+    background-color: #d9d9d9;
+  }
+
+/*「#commentArea」にあるスクロールバーの設定三つ*/
+#commentArea::-webkit-scrollbar {
+    width: 25px;
+  }
   
+  #commentArea::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+  
+  #commentArea::-webkit-scrollbar-thumb {
+    background-color: #d9d9d9;
+  }
 /*スレの内部の真ん中のエリアで色々含んでるdiv*/
 #commentArea{
     background-color: #2F2C37;
@@ -36,7 +69,9 @@ margin-left: 33px;
     height: 438px;
     margin-top: 15px;
     font-family: 'Kosugi Maru', sans-serif;
-    position: relative;
+    overflow: auto;/*スクロールバー*/
+
+    /*------------------------------------------------------------------動かん*/
 
     #imageIcon, #imageBadge{
         position: absolute; /* 画像の位置指定 */
@@ -46,8 +81,8 @@ margin-left: 33px;
     /*アイコンの画像*/
     #imageIcon{
         z-index: 1;
-        top: 32px;
-        left: 63px;
+        top: 27px;
+        left: 59px;
     
         width: 60px; /* 画像の幅 */
         height: 60px; /* 画像の高さ（円形にするために幅と高さは同じにする） */
@@ -57,8 +92,8 @@ margin-left: 33px;
     /*バッジの画像*/
     #imageBadge{
         z-index: 2;
-        top: 59px;
-        left: 104px;
+        top: 53px;
+        left: 100px;
     
         width: 34px; /* 画像の幅 */
         height: 34px; /* 画像の高さ（円形にするために幅と高さは同じにする） */
@@ -83,13 +118,13 @@ margin-left: 33px;
 #commentInformation{
     display: flex;
     font-size: 15px;
+    position: relative;
   }
 /*　ユーザー名　*/
 #textNickName{
-    position: relative;
     display: flex;
     
-    margin-left: 180px;
+    margin-left: 177px;
     margin-top: 20px;
 }
 /*投稿時間*/
@@ -97,36 +132,32 @@ margin-left: 33px;
     position: absolute; 
     left: 500px;/* あとで調節 */
     display: flex;
-    /*margin-left: 80px;*/
     margin-top: 20px;
 }
 /*コメント番号*/
 #textCommentNum{
     position: absolute; 
-    left: 700px; /* あとで調節 */
+    left: 675px; /* あとで調節 */
     display: flex;
-    /*margin-left: 80px;*/
     margin-top: 20px;
 }
 
 /*コメントの内容*/
 .textComment{
-margin-top: 0.8%;
+margin-top: 5px;
 width: 681px;
-margin-left: 15%;
+margin-left: 150px;
 }
 /*いいねのハートの画像*/
 .buttonLike{
- 
-    margin-left: 86%;
-    margin-top: -5%;
+    padding: 40px 0 0 10px;
 }
 
 /*いいねの数*/
 .textLikeCount{
  
-    margin-left: 91.5%;
-    margin-top: -3%;
+    padding:0 0  0 60px;
+    margin-top: -32.5px;
     font-family: 'Kosugi Maru', sans-serif;
 }
 /*-------------------------下の送信のエリア-----------------------*/
