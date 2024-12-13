@@ -1,11 +1,17 @@
 body{
     background-color: #363636;
+    height: 100vh;
+    overflow:  none;
 }
 
 main{
     width: 1000px;
+    height: 100%;
     background-color: #676767;
-    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-end;
+    overflow-y: scroll; 
+    padding-right: 100;
 }
 
 .notifiCmp {
