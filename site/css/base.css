@@ -118,8 +118,14 @@ section {
 }
 
 .sideList:not(.empty) {
+    display: flex;
     height: 45px;
+    justify-content: left;
+    align-items: center;
     border: 1px solid black;
+    &p {
+        
+    }
 }
 
 
