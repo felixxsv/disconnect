@@ -1,6 +1,4 @@
-body{
-    width: 1040px;
-}
+
 .tabs {
     max-width: 100%;
     margin: 10% auto;
@@ -40,7 +38,6 @@ body{
   
   .tab-item.active {
     background-color: #72696A;
-    font-weight: bold;
   }
   
   .tab-panel.active {
@@ -66,5 +63,15 @@ body{
     border: solid 3px #fff;
     margin: 5px 0 20px 0;
     color: #fff;
+  }
+  .createSubmit{
+    font-size: 30px;
+    padding: 5px 35px;
+    color: #fff;
+    background-color: #363636;
+    border-radius: 14px;
+    border: solid 3px #fff;
+    display: block;
+    margin-left: auto;
   }
 
