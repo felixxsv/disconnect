@@ -58,6 +58,11 @@ main::-webkit-scrollbar {
 }
 #date-time{
     color: #F0F0F0;
-    margin: 25px;
-    
+    margin: 25px;   
+}
+
+.popup{
+  input["type=checkbox"]{
+    display:none;
+  }
 }
