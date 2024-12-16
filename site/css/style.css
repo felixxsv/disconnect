@@ -9,7 +9,17 @@ main{
     margin: auto;
     height: 100%;
 }
+#mainContent{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    height: 100%;
+    #list{
+        height: 66%;
+    }
+}
 #subtitle{
+        height: 15%;
         font-size: 64px;
         color: rgb(255, 255, 255);
         text-align: center;
@@ -18,7 +28,6 @@ main{
 }
 #list{
     width: 80%;
-    height: 70%;
     overflow-y: scroll;
     margin: auto;
     max-width: 100%;
@@ -26,20 +35,23 @@ main{
 #content{
     display: flex;
     background-color: rgb(185, 185, 185);
-    font-size: 16px;
-    color: black;
     width: 86.9%;
     height: 50px;
     border-radius: 20px;
     border-width: 1px;
     border-color: black;
-    text-align: center;
     line-height: 50px;
     text-decoration: none;
     border-style: solid;
     margin-bottom: 2px;
     div{
         margin: 0 auto;
+    }
+    p{
+        height: 28px;
+        font-size: 16px;
+        color: black;
+        text-align: center;
     }
     #icon{
         img{
@@ -75,6 +87,7 @@ main{
 }
 #Btn{
     display: flex;
+    height: 15%;
     width: 88.4%;
     max-width: 100%;
     margin: auto;
@@ -94,7 +107,7 @@ main{
     border-style: solid;
     color: white;
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-right: 80%;
     a{
         text-decoration: none;
@@ -115,7 +128,7 @@ main{
     border-width: 3px;
     border-style: solid;
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     a{
         text-decoration: none;
         color: white;
@@ -124,6 +137,32 @@ main{
 #pageCnt{
     color: white;
     font-size: 32px;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-right: 30px;
+}
+
+/*依頼ページ*/
+#yesNo{
+    text-align: center;
+    width: 80px;
+    height: 28px;
+}
+#yes{
+    width: 80px;
+    height: 28px;
+    margin-top: 10px;
+    background-color: #8AD6E5;
+    border-radius: 8px ;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+#no{
+    width: 80px;
+    height: 28px;
+    background-color: #FFA991;
+    border-radius: 8px ;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
 }

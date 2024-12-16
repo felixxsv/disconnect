@@ -1,6 +1,7 @@
 .tabs {
     max-width: 100%;
-    margin: 10% auto;
+    margin: auto;
+    height: 100%;
   }
   
   .tab-list {
@@ -22,24 +23,32 @@
   }
   
   .tab-content {
-    background-color: #72696A;
+    background-color: #696969;
+    height: 78%;
   }
   
   .tab-panel {
     margin-left: 40px;
     display: none;
     color: #fff;
+    #list{
+      height: 80%;
+  }
   }
   
   .tab-item.active {
-    background-color: #72696A;
+    background-color: #696969;
     font-weight: bold;
   }
   
   .tab-panel.active {
+    height: 100%;
     display: block;
     padding: 3%;
+    #list{
+      height: 80%;
   }
+}
   .tab-panel.active h2 {
     font-size: 20px;
     font-weight: bold;
