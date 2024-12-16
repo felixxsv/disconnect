@@ -22,9 +22,7 @@ main{/*全体の設定*/
     color: #f0f0f0;
     
 }
-.center{
-margin-left: 33px;
-}
+
 
 /*　アイコンとバッジをまとめたdiv　*/
   .iconUnify{
@@ -40,19 +38,24 @@ display: flex;
   }
 
 /*「#commentArea」にあるスクロールバーの設定三つ*/
-#commentArea::-webkit-scrollbar {
+#commentArea::-webkit-scrollbar,
+.textareaComment::-webkit-scrollbar {
     width: 14px;
   }
   
-  #commentArea::-webkit-scrollbar-track {
+  #commentArea::-webkit-scrollbar-track,
+  .textareaComment::-webkit-scrollbar-track {
     background-color: #000000;
   }
   
-  #commentArea::-webkit-scrollbar-thumb {
+  #commentArea::-webkit-scrollbar-thumb,
+  .textareaComment::-webkit-scrollbar-thumb {
     background-color: #d9d9d9;
   }
 /*スレの内部の真ん中のエリアで色々含んでるdiv*/
 #commentArea{
+  margin-left: 33px;/*真ん中用*/
+
     background-color: #2F2C37;
     width: 93.46%;
     height: 69.98%;
@@ -154,31 +157,30 @@ p{/*コメントの文字*/
 }
 /*-------------------------下の送信のエリア-----------------------*/
 #transmission{
-    display: flex;
     margin-top: 25px;
+    margin-left: 33px;/*真ん中用*/
     
 
 }
 
 
 /*送信のテキストエリア*/
-.textareaComment {
-    width: 872px;
-    height: 55px;
-
-    min-height: min-content;
-    background-color: #2F2C37;
-    color: #f0f0f0;
-    font-family: 'Kosugi Maru', sans-serif;
-    font-size: 16px;
-    resize: none;
-    field-sizing: content;
-    p{
-        line-height: 1.4;/*あとで調節*/
-        font-size: 16px;
-    }
-
+.textareaComment {/*何故かmainを親と認識できた。っぽい？*/
+  height: 8.78%;
+    width: 83.76%;
+  /* width: 872px;              横幅を親要素に合わせる */
+  /* min-height: 30px;         最小の高さ（1行分の高さ） */
+  /* max-height: 40%;        最大の高さ */
+  background-color: #2F2C37;
+  color: #f0f0f0;
+  font-family: 'Kosugi Maru', sans-serif;
+  resize: none;             /* ユーザーがサイズ変更できないようにする */
+  line-height: 1.4;         /* 行間を調整 */
+  font-size: 16px;
+  padding: 12px;
+  overflow: auto;         /* 縦スクロールを有効 */
 }
+
 
 /*送信のボタンのdiv*/
 #buttonSend input[type="submit"]{

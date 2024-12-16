@@ -15,9 +15,9 @@
 </head>
 <body>
     <main>
+        
         <h2 id="textTitle">タイトル</h2><!-- 「タイトル」の文字 -->
 
-        <div class="center">
                 <!-- タイトルの下 -->
                 <div id="commentArea">
                     <!-- 増える、ココカラ　一つ分のコメント -->
@@ -51,7 +51,7 @@
                                 <div>
                                     <div class="buttonLike"><img src="/site/img/common/heartOff.png" alt="">
                                     </div><!-- いいねのハート -->
-                                    <div class="textLikeCount"><p></p>
+                                    <div class="textLikeCount"><p>999</p>
                                     </div><!-- いいねの数 -->
                                 </div>
 
@@ -163,7 +163,7 @@
                                 <div>
                                     <div class="buttonLike"><img src="/site/img/common/heartOff.png" alt="">
                                     </div><!-- いいねのハート -->
-                                    <div class="textLikeCount"><p></p>
+                                    <div class="textLikeCount"><p>999</p>
                                     </div><!-- いいねの数 -->
                                 </div>
 
@@ -569,22 +569,23 @@
                         <!-- けすおわり -->
                 </div>
             <!-- 送信系のdiv -->
+        
             
-            <form action="" method="">
                 <div id="transmission">
-                    <div id="inputTextComment"><!-- 送信するテキストエリア -->
-                        <!-- eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+                    <form action="" method="">
                         <textarea class="textareaComment" ></textarea>
-
-                    </div>  
-                    <div id="buttonSend"><!-- 送信ぼたん -->
-                        <input type="submit" value="送信">
-                    </div>
+                        
+                        <div id="buttonSend"><!-- 送信ぼたん -->
+                            <input type="submit" value="送信">
+                        </div>
+                     </form>    
                 </div>
-            </form>
-        </div>
+           
+    
+
     </main>
 
 
 </body>
+<script src="/site/JavaScript/script.js"></script>
 </html>
