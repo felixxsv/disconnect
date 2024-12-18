@@ -2,20 +2,24 @@ main{
     max-width: 800px;
     margin: 0 auto;
     height: auto;
-    background-color: #aaa;
-    background-size: auto;
     text-align: center;
+}
+body{
+    background-color: #8e8e8e;
 }
 .textLeft{
     text-align: left;
+    max-width: 800px;
     font-size: 25px;
     margin-bottom: -0.1em;
     margin-left: 0.2em;
 }
 .textRight{
     text-align: right; 
+    max-width: 800px;
 }
 input.form {
+    max-width: 800px;
     width: 96%;
     margin: 0 auto;
     border-radius: 15px;
