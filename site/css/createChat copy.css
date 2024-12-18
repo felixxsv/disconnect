@@ -14,7 +14,7 @@
 
 
 main{/*全体の設定*/
-    width: 1040px;
+    width: 1041px;
     height: 650px;
     /*後で消す背景の色、グラデ画像*/
     background-color: rgb(125, 123, 123);
@@ -157,46 +157,37 @@ p{/*コメントの文字*/
 }
 /*-------------------------下の送信のエリア-----------------------*/
 #transmission{
-height: auto;
-margin: 70px 33px 0 33px;
-display: flex;
-position: relative;
-} 
-
+  width: 100%;
+  position: relative;
+}
 
 /*送信のテキストエリア*/
 .textareaComment {/*何故かmainを親と認識できた。っぽい？*/
-  width: 90%; 
+  width: 83.76%;
+  height: 40px;
+  /* width: 872px;              横幅を親要素に合わせる */
+  /* min-height: 30px;         最小の高さ（1行分の高さ） */
+  /* max-height: 40%;        最大の高さ */
   background-color: #2F2C37;
   color: #f0f0f0;
   font-family: 'Kosugi Maru', sans-serif;
   resize: none;             /* ユーザーがサイズ変更できないようにする */
   line-height: 1.4;         /* 行間を調整 */
   font-size: 16px;
+  padding: 12px;
   position: absolute; 
-  right: 10%;
   bottom: 0px;
-  max-height: 200px; /* 最大高さを指定 */
-  overflow-y: hidden; /* 初期状態ではスクロールバーを隠す */
-  z-index: 2  ;
 }
 
 
 /*送信のボタンのdiv*/
-#buttonSend{
-  width: 100%;
-  display: flex;
- justify-content: flex-end;
-}
-#buttonSend input[type="submit"]{
+form input[type="submit"]{
   background-color: #200D4D;/**/
   font-size: 20px;
   color: #f0f0f0;
-  width: 10%;
+  width: 100px;
   height: 55px;/*あとで*/
   font-family: 'Kosugi Maru', sans-serif;
-  position: absolute;
-  bottom: 0px;
 }
 /*　したの線のdiv border-bottom　*/
 .lineborder{
