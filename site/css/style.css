@@ -40,15 +40,14 @@ main{
     border-radius: 20px;
     border-width: 1px;
     border-color: black;
-    line-height: 50px;
+    line-height: 30px;
     text-decoration: none;
     border-style: solid;
     margin-bottom: 2px;
     div{
-        margin: 0 auto;
+        margin: auto;
     }
     p{
-        height: 28px;
         font-size: 16px;
         color: black;
         text-align: center;
@@ -65,7 +64,6 @@ main{
     #nickName{
         width: 123px;
         height: 28px;
-        text-align: center;
     }
     #roll{
         width: 68px;
@@ -150,12 +148,12 @@ main{
 #yes{
     width: 80px;
     height: 28px;
-    margin-top: 10px;
     background-color: #8AD6E5;
     border-radius: 8px ;
     border-color: black;
     border-width: 1px;
     border-style: solid;
+
 }
 #no{
     width: 80px;
