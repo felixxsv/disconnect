@@ -5,6 +5,7 @@ html,
 body {
     min-width: 720px;
     overflow: hidden;
+    user-select: none;
 }
 
 body {
@@ -19,6 +20,9 @@ p {
     font-style: normal;
 }
 
+img {
+    pointer-events: none;
+}
 
 /*Google Font Download*/
 
@@ -55,15 +59,6 @@ header {
     }
 }
 
-#boxSidebar>.enabled {
-    display: flex;
-}
-
-#boxSidebar>.disabled {
-    display: none;
-}
-
-
 /* --common header settings-- */
 
 
@@ -87,42 +82,23 @@ section {
 }
 
 #boxSidebar {
-    /* width: 60px; */
     min-width: 60px;
     height: 100%;
     background-color: #363636;
-}
-
-.sidebar {
-    display: flex;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-}
-
-.sidebar:not(.empty):hover {
-    background-color: #565656;
-}
-
-.sidebar>div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#boxSidebar>.sidebar:nth-of-type(2)>div {
-    &>img {
-        width: 60%;
+    &>.sidebar:nth-of-type(2)>div {
+        &>img {
+            width: 60%;
+        }
     }
-}
-
-#boxSidebar>.empty {
-    height: 50px;
-}
-
-.sidebar>div>img {
-    width: 70%;
-    height: 100%;
+    &>.empty {
+        height: 50px;
+        &:hover {
+            cursor: default;
+        }
+    }
+    &>.selected {
+        background-color: #AF3232;
+    }
 }
 
 #boxSideList {
@@ -131,36 +107,60 @@ section {
     background-image: url("/site/img/common/backGroundImageSideListBlack.svg");
     background-color: rgba(0, 0, 0, 0.15);
     background-blend-mode: darken;
+    &>div>h2 {
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 40px;
+        font-family: "Stick", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align-last: left;
+    }
+    &>.empty:hover>h2 {
+        cursor: default;
+    }
+    &>.selected {
+        background-color: #8F8989;
+    }
 }
 
-#boxSideList h2 {
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 40px;
-    font-family: "Stick", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align-last: left;
+.sidebar {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    &:not(.empty):hover {
+        background-color: #565656;
+        cursor: pointer;
+    }
+    &>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &>img {
+            width: 70%;
+            height: 100%;
+        }
+    }
 }
 
 .sideList {
     border-bottom: 1px solid black;
-}
-
-.sideList:not(.empty) {
-    display: flex;
-    height: 52px;
-    justify-content: left;
-    align-items: center;
-    background-color: #D9D9D9;
-    &>p {
-        font-size: 27px;
+    &:not(.empty) {
+        display: flex;
+        height: 52px;
+        justify-content: left;
+        align-items: center;
+        background-color: #D9D9D9;
+        &>p {
+            font-size: 27px;
+        }
+        &:hover {
+            background-color: #a0a0a0;
+            cursor: pointer;
+        }
     }
-    &:hover {
-        background-color: #a0a0a0;
-    }
 }
-
 
 /* --common section settings-- */
 
@@ -180,7 +180,6 @@ main {
     place-items: center;
     /* --test-- */
 }
-
 
 /* --common main settings-- */
 
