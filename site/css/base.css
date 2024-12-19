@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kosugi+Maru&display=swap');
+
 html,
 body {
     min-width: 720px;
@@ -9,6 +11,12 @@ body {
     display: flex;
     height: 100vh;
     flex-direction: column;
+}
+
+p {
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -94,6 +102,10 @@ section {
     }
 }
 
+#boxSidebar>.empty {
+    height: 50px;
+}
+
 .sidebar>div>img {
     width: 70%;
     height: 100%;
@@ -117,14 +129,18 @@ section {
     text-align-last: left;
 }
 
+.sideList {
+    border-bottom: 1px solid black;
+}
+
 .sideList:not(.empty) {
     display: flex;
-    height: 45px;
+    height: 52px;
     justify-content: left;
     align-items: center;
-    border: 1px solid black;
-    &p {
-        
+    background-color: #D9D9D9;
+    &>p {
+        font-size: 27px;
     }
 }
 
@@ -137,6 +153,11 @@ section {
 main {
     width: 80%;
     height: 100%;
+    background-image: url("/site/img/common/backGroundImageSideListBlack.svg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     /* ++test++ */
     display: grid;
     place-items: center;
@@ -145,3 +166,19 @@ main {
 
 
 /* --common main settings-- */
+
+/* ++common footer settings++ */
+footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #363636;
+}
+
+#logoFooter {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+/* --common footer settings-- */
