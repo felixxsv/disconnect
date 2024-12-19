@@ -3,46 +3,74 @@ main{
     margin: 0 auto;
     height: auto;
     text-align: center;
-}
+    font-family: "Kosugi Maru",serif;
+    color: #ffff;
+ }
+.kosugi-maru-regular {
+    font-family: "Kosugi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+ }
 body{
-    background-color: #8e8e8e;
-}
+    background-color: #686868;
+ }
+.textTitle{
+    font-size: 35px;
+    margin-top: 3rem;
+    margin-bottom: 85px;
+ }
 .textLeft{
     text-align: left;
     max-width: 800px;
-    font-size: 25px;
-    margin-bottom: -0.1em;
+    font-size: 28px;
+    margin-bottom: 0.3em;
     margin-left: 0.2em;
-}
+ }
 .textRight{
     text-align: right; 
     max-width: 800px;
-}
+ }
+input{
+    font-family: inherit;
+ }
+ .textAll{
+    display:flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+ }
 input.form {
     max-width: 800px;
     width: 96%;
+    height: 20px;
     margin: 0 auto;
     border-radius: 15px;
     padding: 10px;
     border: #aaa;
+    margin-bottom: 2rem;
  }
- div.inputTextArea{
+.inputTextArea{
     vertical-align: top;
  }
- div.inputSubmitArea{
+ .textRight{
+    margin-top: -2rem;
+ }
+.inputSubmitArea{
     text-align: left;
     margin-top: 9%
+    
  }
  .submit{
-    border-radius: 7px;
+    font-size: 19px;
+    border-radius: 10px;
+    border: #363636;
     margin: 0 auto;
-    height:48px;
-    width:120px;
-    }
-#textTitle{
-    font-size: 30px;
-    margin-top: 0.5em;
-}
-.forGet{
+    height: 65px;
+    width: 170px;
+    color: #fff;
+    background-color: #363636;
 
-}
+/* .forGet{
+
+} */
+
+}  
