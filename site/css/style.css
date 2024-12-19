@@ -16,9 +16,15 @@ img{
 #step{
     width: 85%;
     height: 70%;
-    margin: auto;
-    margin-bottom: 40px;
+    margin: 0 auto;
+    /*margin-bottom: 40px;*/
     display: flex;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    div{
+        margin: 0 auto;
+    }
 }
 #badge{
     overflow-x: scroll;
