@@ -1,9 +1,7 @@
-body{
-    width: 1040px;
-}
+
 .tabs {
     max-width: 100%;
-    margin: 10% auto;
+    margin: auto;
   }
   
   .tab-list {
