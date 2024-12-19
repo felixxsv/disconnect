@@ -131,16 +131,15 @@ section {
     background-image: url("/site/img/common/backGroundImageSideListBlack.svg");
     background-color: rgba(0, 0, 0, 0.15);
     background-blend-mode: darken;
-}
-
-#boxSideList h2 {
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 40px;
-    font-family: "Stick", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align-last: left;
+    &>div>h2 {
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 40px;
+        font-family: "Stick", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align-last: left;
+    }
 }
 
 .sideList {
@@ -180,7 +179,6 @@ main {
     place-items: center;
     /* --test-- */
 }
-
 
 /* --common main settings-- */
 
