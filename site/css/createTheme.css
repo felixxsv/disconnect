@@ -80,8 +80,8 @@ body{
 #arrow {
   width: 158px;
   box-sizing: border-box;
-  margin-top: 60px;
-  margin-left: 40px;
+  margin-top: -20px;
+  margin-left: -60px;
   img{
       width: 60px;
       height: 60px;
