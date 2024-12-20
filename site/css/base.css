@@ -4,7 +4,6 @@ html,
 body {
     min-width: 720px;
     overflow: hidden;
-    user-select: none;
 }
 
 body {
@@ -17,6 +16,11 @@ p {
     font-family: "Kosugi Maru", sans-serif;
     font-weight: 400;
     font-style: normal;
+    user-select: none;
+}
+
+h2 {
+    user-select: none;
 }
 
 img {
