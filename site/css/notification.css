@@ -61,22 +61,36 @@ main::-webkit-scrollbar {
     margin: 25px;   
 }
 
-.popup{
+#popup{
     /* display: none; */
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
     background-color: aqua;
     position: fixed;
-    margin: auto;
-    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
   }
 
-  .popup div{
-    margin: auto;
-    line-height: 170px;
-    text-align: center
+.popupElement{
+  text-align: center;
+  width: 100%;
+  &>h1{
+    margin: 80px 20px 50px 20px;
+    font-size: 35px;
+    border-bottom: solid 1px #fff;
   }
- 
+  &>p{
+    font-size: 18px;
+  }
+  div{
+  margin-top: 50px;
+  height: 50px;
+    &>button{
+      margin: 0 auto;
+      padding: 10px 15px;
+    }
+  }
+}
+    
+
+
