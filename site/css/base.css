@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kosugi+Maru&display=swap');
-
 html,
 body {
     min-width: 720px;
@@ -23,6 +22,7 @@ p {
 img {
     pointer-events: none;
 }
+
 
 /*Google Font Download*/
 
@@ -53,11 +53,11 @@ header {
 }
 
 #admin {
-
     &>div>img {
         width: 60%;
     }
 }
+
 
 /* --common header settings-- */
 
@@ -103,6 +103,7 @@ section {
 
 #boxSideList {
     flex: auto;
+    width: 120px;
     text-align: center;
     background-image: url("/site/img/common/backGroundImageSideListBlack.svg");
     background-color: rgba(0, 0, 0, 0.15);
@@ -162,6 +163,7 @@ section {
     }
 }
 
+
 /* --common section settings-- */
 
 
@@ -174,16 +176,18 @@ main {
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-
     /* ++test++ */
     display: grid;
     place-items: center;
     /* --test-- */
 }
 
+
 /* --common main settings-- */
 
+
 /* ++common footer settings++ */
+
 footer {
     display: flex;
     justify-content: right;
@@ -197,4 +201,6 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+
 /* --common footer settings-- */
