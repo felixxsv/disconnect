@@ -121,8 +121,11 @@ section {
         font-style: normal;
         text-align-last: left;
     }
-    &>.empty:hover>h2 {
-        cursor: default;
+    &>.empty {
+        border: none;
+        &>hover>h2 {
+            cursor: default;
+        }
     }
     &>.selected {
         background-color: #8F8989;
