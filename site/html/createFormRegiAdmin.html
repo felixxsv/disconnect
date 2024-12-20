@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/site/css/reset.css">
+    <link rel="stylesheet" href="/site/css/createFormRegiAdmin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <main>
+            <div class="centering">
+                <p class="textTitle">管理者登録</p> <!--ヘッダー名前-->
+            </div>
+            <div class="textAll">
+
+                <div class="error"><!-- cssで隠してるdiv -->
+                    <p>組織IDが英数字4文字ではないです。</p>
+                </div>
+                <div class="inputTextArea">
+                    <P class="textLeft">組織名</p><!-- テキストボックスの名前 -->    
+                    <input type="text" class="form"><!-- テキストボックス -->
+                </div>
+
+                <div class="inputTextArea">
+                    <P class="textLeft">組織ID</p><!-- テキストボックスの名前 -->    
+                    <input type="text" class="form"><!-- テキストボックス -->
+                </div>
+                <div class="texthint">
+                    <p>※英数字4文字の入力</p>
+                </div>
+                <div class="inputTextArea">
+                    <P class="textLeft">パスワード</p><!-- テキストボックスの名前 -->    
+                    <input type="text" class="form"><!-- テキストボックス -->
+                </div>
+                <div class="inputTextArea">
+                    <P class="textLeft">組織人数</p><!-- テキストボックスの名前 -->    
+                    <input type="text" class="form"><!-- テキストボックス -->
+                </div>
+
+                
+            </div>
+            <div class="inputSubmitArea"><!--ボタン-->
+                <input type="submit" value="登録" class="submit">
+            </div>
+        </main>
+    </body>
+</html>
