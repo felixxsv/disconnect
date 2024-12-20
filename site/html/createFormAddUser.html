@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/site/css/reset.css">
+    <link rel="stylesheet" href="/site/css/createFormAddUser.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <main>
+            <div class="centering">
+                <p class="textTitle">ユーザー登録</p> <!--ヘッダー名前-->
+            </div>
+            <div class="textAll">
+
+                <div class="error"><!-- cssで隠してるdiv -->
+                    <p>新規パスワードと新規パスワード確認が一致していません。</p>
+                </div>
+                <div class="inputTextArea">
+                    <P class="textLeft">ニックネーム</p><!-- テキストボックスの名前 -->    
+                    <input type="text" class="form"><!-- テキストボックス -->
+                </div>
+
+                <!-- ２～４個のテキストエリア、始まり -->
+                <div class="inputTextArea">
+                    <P class="textLeft">E-mail</p><!-- テキストボックスの名前 -->    
+                    <input type="text" class="form"><!-- テキストボックス -->
+                </div>
+                <div class="inputTextArea">
+                    <P class="textLeft">新規パスワード</p><!-- テキストボックスの名前 -->    
+                    <input type="text" class="form"><!-- テキストボックス -->
+                </div>
+                <div class="cssright"><!-- でかいdiv -->
+                    <div class="texthint"><!-- 文字のdiv -->
+                        <p>文字数：8～20文字文字種：<br>
+                        「英大文字」「英小文字」「数字または記号」を含む必要があります</p>
+                    </div>
+                </div>
+                
+                <div class="inputTextArea">
+                    <P class="textLeft">新規パスワード確認</p><!-- テキストボックスの名前 -->    
+                    <input type="text" class="form"><!-- テキストボックス -->
+                </div>
+                
+
+                <!-- ２～４個のテキストエリア、おわり -->
+            </div>
+            <div class="inputSubmitArea"><!--ボタン-->
+                <input type="submit" value="登録" class="submit">
+            </div>
+        </main>
+    </body>
+</html>
