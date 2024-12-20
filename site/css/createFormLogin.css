@@ -78,3 +78,16 @@ input.form {
      /*　↓　error時には表示する*/
      visibility: hidden;
 }
+
+.passforget{
+   width: 820px;
+   margin: 0 auto; 
+   text-align: right; 
+   margin-top: -1.5%;
+   a{
+       font-size: 16px;
+       color: #fff;
+       text-decoration: none;
+    
+   }
+}
