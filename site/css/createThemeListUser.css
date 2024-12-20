@@ -66,17 +66,33 @@ body{
   background-color: #d9d9d9;
 }
 .themeDitail{
+  height: 40px;
+  width: 100%;
   margin: 35px 0 15px 0;
   padding-bottom:5px;
   border-bottom: solid 1px #fff;
 }
-
+.themeHeader{
+  height: 50%;
+}
 .themeHeader p{
   float: left;
 }
 .themeHeader p :nth-child(1){
   margin-right: 50px;
   
+}
+.themeMain{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.themeMain :first-child{
+  width: 80%;
+}
+
+.themeMain :nth-child(2){
+  width:20%;
 }
   
  
@@ -121,6 +137,13 @@ body{
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
+}
+.themeContentRanking {
+  padding-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
 }
 
 
