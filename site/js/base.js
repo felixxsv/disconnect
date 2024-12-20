@@ -14,8 +14,10 @@ sidebar.forEach(element => {
 
 sideList.forEach(element => {
     element.addEventListener("click", event => {
-        if (event.target.tagName === 'IMG') {
-
+        const targetDiv = event.currentTarget.querySelector('[data-url]');
+        if (targetDiv) {
+            const dataUrl = targetDiv.getAttribute('data-url');
+            console.log(dataUrl);
         }
     });
 });;
