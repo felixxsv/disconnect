@@ -89,11 +89,6 @@ section {
     min-width: 60px;
     height: 100%;
     background-color: #363636;
-    &>.sidebar:nth-of-type(2)>div {
-        &>img {
-            width: 60%;
-        }
-    }
     &>.empty {
         height: 50px;
         &:hover {
@@ -121,8 +116,11 @@ section {
         font-style: normal;
         text-align-last: left;
     }
-    &>.empty:hover>h2 {
-        cursor: default;
+    &>.empty{
+        border: none;
+        &:hover>h2 {
+            cursor: default;
+        }
     }
     &>.selected {
         background-color: #8F8989;
@@ -138,6 +136,11 @@ section {
         background-color: #565656;
         cursor: pointer;
     }
+    &:nth-of-type(2)>div {
+        &>img {
+            width: 60%;
+        }
+    }
     &>div {
         display: flex;
         justify-content: center;
@@ -151,6 +154,9 @@ section {
 
 .sideList {
     border-bottom: 1px solid black;
+    &:nth-of-type(2) {
+        border-top: 1px solid black;
+    }
     &:not(.empty) {
         display: flex;
         height: 52px;
