@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disconnect</title>
+    <!-- 
+        CSSを追加↓
+    -->
+    <link rel="stylesheet" href="/site/css/reset.css">
+    <link rel="stylesheet" href="/site/css/base.css">
+</head>
+
+<body>
+    <!-- ヘッダーコンポーネント -->
+    <header>
+        <div id="iconHeader">
+            <img src="/site/img/common/iconHeaderDisconnect.svg" alt="iconDisconnect">
+        </div>
+        <div id="logoHeader">
+            <img src="/site/img/common/logoHeaderDisconnect.svg" alt="logoDisconnect">
+        </div>
+    </header>
+
+    <div id="container">
+
+        <!-- 
+            サイドコンポーネント
+        -->
+        <section>
+            <!-- commonSidebar -->
+            <div id="boxSidebar">
+                <div class="sidebar empty"></div>
+                <div class="sidebar">
+                    <div data-url="home"><img src="/site/img/common/iconHomeSideBar.png" alt="home"></div>
+                </div>
+                <div class="sidebar">
+                    <div data-url="notification"><img src="/site/img/common/iconBellSideBar.png" alt="notification"></div>
+                </div>
+                <div class="sidebar">
+                    <div data-url="settings"><img src="/site/img/common/iconGearSideBar.png" alt="settings"></div>
+                </div>
+                <div id="admin" class="sidebar selected">
+                    <div data-url="administrator"><img src="/site/img/common/iconAdministratorSideBar.png" alt="administrator"></div>
+                </div>
+            </div>
+
+            <!-- sideList -->
+            <div id="boxSideList">
+                <div class="sideList empty">
+                    <!-- ページによって表示内容を変える -->
+                    <h2>管理者管理</h2>
+                </div>
+                <!-- ページによって表示内容を変える -->
+                <!--
+                    サンプル↓ 
+                    <div class="sideList">
+                        <p>テーマ一覧</p>
+                    </div> 
+                -->
+            </div>
+        </section>
+
+        <!-- メインコンポーネント -->
+        <main>
+            <!-- 
+                hogehoge
+            -->
+            <p>main container</p>
+        </main>
+    </div>
+
+    <footer>
+        <div id="logoFooter">
+            <img src="/site/img/common/logoFooterDisconnect.svg" alt="">
+        </div>
+    </footer>
+    <!-- JavaScriptをロード -->
+    <script src="/site/js/base.js"></script>
+</body>
+
+</html>
